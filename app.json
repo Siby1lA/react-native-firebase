@@ -1,0 +1,11 @@
+{
+  "expo": {
+    "name": "react-native-firebase",
+    "slug": "react-native-firebase",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  },
+  "name": "react-native-firebase"
+}
