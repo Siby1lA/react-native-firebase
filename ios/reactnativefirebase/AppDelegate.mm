@@ -4,6 +4,7 @@
 #import <React/RCTLinkingManager.h>
 
 #import <Firebase.h>
+#import <RNKakaoLogins.h>
 
 @implementation AppDelegate
 
@@ -28,10 +29,21 @@
 }
 
 // Linking API
-- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
-  
-  [FIRApp configure];
-  return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];
+//- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+//
+//  [FIRApp configure];
+//  return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];
+//}
+
+// kakao
+- (BOOL)application:(UIApplication *)app
+     openURL:(NSURL *)url
+     options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
+ if([RNKakaoLogins isKakaoTalkLoginUrl:url]) {
+    return [RNKakaoLogins handleOpenUrl: url];
+ }
+
+ return NO;
 }
 
 // Universal Links
