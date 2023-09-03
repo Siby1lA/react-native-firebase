@@ -15,7 +15,7 @@
   // You can add your custom initial props in the dictionary below.
   // They will be passed down to the ViewController used by React Native.
   self.initialProps = @{};
- 
+  [FIRApp configure];
   return [super application:application didFinishLaunchingWithOptions:launchOptions];
 }
 
@@ -31,7 +31,7 @@
 // Linking API
 //- (BOOL)application:(UIApplication *)application openURL:(NSURL *)url options:(NSDictionary<UIApplicationOpenURLOptionsKey,id> *)options {
 //
-//  [FIRApp configure];
+//
 //  return [super application:application openURL:url options:options] || [RCTLinkingManager application:application openURL:url options:options];
 //}
 

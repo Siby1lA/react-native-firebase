@@ -1833,6 +1833,23 @@
     opencollective-postinstall "^2.0.1"
     superstruct "^0.6.2"
 
+"@react-native-firebase/auth@^18.3.2":
+  version "18.3.2"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/auth/-/auth-18.3.2.tgz#28d079a456f0982f3c9ac81b91cd5563415d3be8"
+  integrity sha512-a96YrKsadMJ3pYrS2i2a13tSMDbs6YqLWMi7ONLXclIY7dG7jtYCtZJq+Afr1JY7lnCIZTKOPkvXDy+NRBy3rg==
+  dependencies:
+    plist "^3.1.0"
+
+"@react-native-firebase/firestore@^18.3.2":
+  version "18.3.2"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/firestore/-/firestore-18.3.2.tgz#aa4d7914c63f5b19a41c2e7872751fce0fe19660"
+  integrity sha512-5rMEC7r5dGzlumzpHXGfY1P2MTTAxc+bqlDDr1FecrkSq3rMQ9XH/ZOE4qiMpJc/cWoHh8t+slqrdJZ25ykLTg==
+
+"@react-native-firebase/functions@^18.3.2":
+  version "18.3.2"
+  resolved "https://registry.yarnpkg.com/@react-native-firebase/functions/-/functions-18.3.2.tgz#2dc849527ad8323c7f4db660996c85b9969b97e6"
+  integrity sha512-KZsG6TWkTnXNm1+Q+3I60WDEHju08FTkMYSu8fv0Id+L5uUz7n1pCGzIgDVOwtz1q+AMVqk3enxs7QLOo4sU1A==
+
 "@react-native-seoul/kakao-login@^5.3.0":
   version "5.3.0"
   resolved "https://registry.yarnpkg.com/@react-native-seoul/kakao-login/-/kakao-login-5.3.0.tgz#1c0cf2ecb9f8e7f7dc7adaa12167a843d957573a"
@@ -5306,7 +5323,7 @@ pkg-up@^3.1.0:
   dependencies:
     find-up "^3.0.0"
 
-plist@^3.0.5:
+plist@^3.0.5, plist@^3.1.0:
   version "3.1.0"
   resolved "https://registry.yarnpkg.com/plist/-/plist-3.1.0.tgz#797a516a93e62f5bde55e0b9cc9c967f860893c9"
   integrity sha512-uysumyrvkUX0rX/dEVqt8gC3sTBzd4zoWfLeS29nb53imdaXVvLINYXTI2GNqzaMuvacNx4uJQ8+b3zXR0pkgQ==
